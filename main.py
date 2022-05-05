@@ -1,3 +1,4 @@
+# Import and initialize libraries
 import pygame
 pygame.init()
 
@@ -5,7 +6,7 @@ pygame.init()
 screen = pygame.display.set_mode([850, 700])
 pygame.display.set_caption("Raycasting Test")
 
-
+# Objects
 
 
 # Run until user asks to quit loop
