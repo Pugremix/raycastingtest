@@ -1,4 +1,5 @@
 # Import and initialize libraries
+import math
 import pygame
 import input
 import processing
