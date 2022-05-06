@@ -12,6 +12,6 @@ class Player:
         self.sight = sight
     def Draw_internal_player(self, screen):
         pygame.draw.rect(screen, (255, 0, 0), pygame.Rect(self.pX, self.pY, 15, 15))
-        line_x = self.pX + 7 + math.cos(math.radians(0))
-        line_y = self.pY + 7 + math.sin(math.radians(0))
+        line_x = self.pX + 7 + math.cos(math.radians(0)) * self.sight
+        line_y = self.pY + 7 + math.sin(math.radians(0)) * self.sight
         pygame.draw.line(screen, (0, 0, 0), (self.pX + 7, self.pY + 7), (line_x, line_y), 3)
