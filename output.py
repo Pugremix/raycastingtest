@@ -2,4 +2,6 @@
 import pygame
 pygame.init()
 
-# Classes
+# Internal view
+def Draw_internal():
+    ()
