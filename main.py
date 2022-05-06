@@ -4,6 +4,7 @@ import pygame
 import input
 import processing
 import output
+
 pygame.init()
 
 # Window
@@ -34,3 +35,5 @@ while running:
 
 # Quit
 pygame.quit()
+
+# Assistant code credit: https://stackoverflow.com/questions/18179877/pygame-rotating-a-line
