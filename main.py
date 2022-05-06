@@ -8,7 +8,7 @@ import output
 pygame.init()
 
 # Window
-screen = pygame.display.set_mode([850, 700])
+screen = pygame.display.set_mode([900, 750])
 pygame.display.set_caption("Raycasting Test")
 
 # Objects
