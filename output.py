@@ -9,4 +9,5 @@ class Player:
         self.pY = pY
         self.p_angle = p_angle
     def Draw_internal_player(self, screen):
-        pygame.draw.rect(screen, (255, 0, 0), pygame.Rect(self.pX, self.pY, 20, 20))
+        pygame.draw.rect(screen, (255, 0, 0), pygame.Rect(self.pX, self.pY, 25, 25))
+        pygame.draw.line(screen, (0, 0, 0), (self.pX, self.pY), (self.pX, self.pY))
