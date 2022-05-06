@@ -24,7 +24,6 @@ while running:
         if event.type == pygame.QUIT:
             running = False
 
-
     # Draw
     # Background
     screen.fill((150, 150, 150))
