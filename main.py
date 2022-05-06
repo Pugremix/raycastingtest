@@ -1,5 +1,8 @@
 # Import and initialize libraries
 import pygame
+import input
+import processing
+import output
 pygame.init()
 
 # Window
@@ -7,7 +10,7 @@ screen = pygame.display.set_mode([850, 700])
 pygame.display.set_caption("Raycasting Test")
 
 # Objects
-
+Hitbox = output.Player(0, 0)
 
 # Run until user asks to quit loop
 running = True
@@ -24,6 +27,7 @@ while running:
     screen.fill((150, 150, 150))
 
     # Draw Player
+    Hitbox.Draw_internal_player(screen)
 
     pygame.display.flip()
 

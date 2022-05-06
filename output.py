@@ -7,5 +7,5 @@ class Player:
     def __init__(self, pX, pY):
         self.pX = pX
         self.pY = pY
-    def Draw_internal(self, screen, color):
-        pygame.draw.rect(screen, color, pygame.Rect(self.pX, self.pY, 20, 20))
+    def Draw_internal_player(self, screen):
+        pygame.draw.rect(screen, (255, 0, 0), pygame.Rect(self.pX, self.pY, 20, 20))
