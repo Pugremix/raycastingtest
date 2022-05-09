@@ -18,7 +18,7 @@ class Map:
             for col in range(self.grid):
                 tile = row * self.grid + col
                 pygame.draw.rect(
-                    screen, self.color if MAP[tile] == '#', else
+                    screen, self.color if MAP[tile] == '#' else
                     self.empty, (col * self.size, row * self.size, self.size, self.size)
 # Player
 class Player:
