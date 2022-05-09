@@ -42,7 +42,7 @@ while running:
     Board.Draw_Map(screen)
 
     # View
-    pygame.draw.rect(screen, (0, 0, 0), pygame.Rect(400, 400, 100, 100))
+    pygame.draw.rect(screen, (0, 0, 0), pygame.Rect(400, 500, 100, 100))
 
     # Player
     Hitbox = output.Player(195, 195, Hitbox_Movement.angle, 100)
