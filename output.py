@@ -20,7 +20,6 @@ class Map:
                 pygame.draw.rect(
                     screen, self.color if MAP[tile] == '#', else
                     self.empty, (col * self.size, row * self.size, self.size, self.size)
-
 # Player
 class Player:
     def __init__(self, pX, pY, p_angle, sight):
