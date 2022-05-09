@@ -5,4 +5,5 @@ pygame.init()
 
 # Ray Distance
 Ray_Target = 0
-Impact_Distance = 0
+target_x = 0
+target_y = 0
