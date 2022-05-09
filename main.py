@@ -45,7 +45,7 @@ while running:
     pygame.draw.rect(screen, (0, 0, 0), pygame.Rect(400, 500, 100, 100))
 
     # Player
-    Hitbox = output.Player(195, 195, Hitbox_Movement.angle, 100)
+    Hitbox = output.Player(195, 195, Hitbox_Movement.angle, 120)
     Hitbox.Draw_internal_player(screen)
 
     pygame.display.flip()
