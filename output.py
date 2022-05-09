@@ -8,6 +8,8 @@ pygame.init()
 class Map:
     def __init__(self):
         self.size
+    def Draw_Map(self):
+        print(0)
 
 class Player:
     def __init__(self, pX, pY, p_angle, sight):
