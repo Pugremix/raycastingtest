@@ -20,7 +20,7 @@ class Map:
     def __init__(self):
         self.grid = 9
         self.size = 45
-        self.color = (200, 200, 200)
+        self.color = (175, 175, 175)
         self.empty = (100, 100, 100)
     def Draw_Map(self, screen):
         for row in range(self.grid):
@@ -28,7 +28,7 @@ class Map:
                 tile = row * self.grid + col
                 pygame.draw.rect(
                     screen, self.color if MAP[tile] == '#' else
-                    self.empty, (col * self.size, row * self.size, self.size, self.size))
+                    self.empty, (col * self.size, row * self.size, self.size - 1, self.size - 1))
 # Player
 class Player:
     def __init__(self, pX, pY, p_angle, sight):

@@ -35,7 +35,7 @@ while running:
 
     # Draw
     # Background
-    screen.fill((150, 150, 150))
+    screen.fill((50, 50, 50))
 
     # Map
     Board = output.Map()
