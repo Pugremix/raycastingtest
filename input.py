@@ -5,7 +5,7 @@ pygame.init()
 
 class Map:
     def __init__(self):
-        self.Size
+        self.size
 
 class Movement:
     def __init__(self, angle=-90):
