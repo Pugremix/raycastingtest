@@ -4,18 +4,21 @@ import pygame
 pygame.init()
 
 # Internal view
-
+# Map
+MAP =
 class Map:
     def __init__(self):
-        self.size = 9
+        self.grid = 9
+        self.size = 45
         self.color = (200, 200, 200)
+        self.empty = (100, 100, 100)
     def Draw_Map(self, screen):
         print(0)
-        for row in range(self.size):
-            for col in range(self.size):
-                tile = row * self.size + col
-                pygame.draw.rect(screen, self.color if MAP[tile])
-
+        for row in range(self.grid):
+            for col in range(self.grid):
+                tile = row * self.grid + col
+                pygame.draw.rect(screen, self.color if MAP[tile] == '#', else self.empty, (self.size, self.size,))
+# Player
 class Player:
     def __init__(self, pX, pY, p_angle, sight):
         self.pX = pX
