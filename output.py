@@ -23,7 +23,6 @@ class Map:
         self.color = (200, 200, 200)
         self.empty = (100, 100, 100)
     def Draw_Map(self, screen):
-        print(MAP, type (MAP))
         for row in range(self.grid):
             for col in range(self.grid):
                 tile = row * self.grid + col

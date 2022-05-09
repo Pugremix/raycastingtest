@@ -11,8 +11,6 @@ pygame.init()
 screen = pygame.display.set_mode([900, 750])
 pygame.display.set_caption("Raycasting Test")
 
-# Map
-
 # Objects
 # Hitbox
 Hitbox_Movement = input.Movement()
@@ -38,6 +36,10 @@ while running:
     # Draw
     # Background
     screen.fill((150, 150, 150))
+
+    # Map
+    Board = output.Map()
+    Board.Draw_Map(screen)
 
     # View
     pygame.draw.rect(screen, (0, 0, 0), pygame.Rect(400, 400, 100, 100))
