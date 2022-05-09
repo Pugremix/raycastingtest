@@ -13,7 +13,7 @@ class Player:
     def sight(self, screen):
         line_x = self.pX + 7 + math.cos(math.radians(self.p_angle)) * self.sight
         line_y = self.pY + 7 + math.sin(math.radians(self.p_angle)) * self.sight
-        pygame.draw.line(screen, (0, 0, 0), (self.pX + 7, self.pY + 7), (line_x, line_y), 3)
+        pygame.draw.line(screen, (0, 0, 0), (self.pX + 7, self.pY + 7), (line_x, line_y))
 # Player Movement
 class Movement:
     def __init__(self, angle=-90):
