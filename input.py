@@ -6,9 +6,9 @@ pygame.init()
 class Movement:
     def __init__(self, angle=90):
         self.angle = angle
-        self.keys = pygame.key.get_pressed()
-    def Rotation(self):
-        if self.keys[pygame.K_LEFT]:
-            self.angle -= 2
-        if self.keys[pygame.K_RIGHT]:
-            self.angle += 2
+        self.rotation_speed = 5
+    def Movement(self):
+        if pygame.key.get_pressed()[pygame.K_LEFT]:
+            self.angle -= self.rotation_speed
+        if pygame.key.get_pressed()[pygame.K_RIGHT]:
+            self.angle += self.rotation_speed

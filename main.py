@@ -26,12 +26,13 @@ while running:
         if event.type == pygame.QUIT:
             running = False
 
+    keys = pygame.key.get_pressed()
+
     # Draw
     # Background
     screen.fill((150, 150, 150))
 
     # Draw Player
-    Hitbox_Movement.Rotation()
     Hitbox.Draw_internal_player(screen)
 
     pygame.display.flip()
