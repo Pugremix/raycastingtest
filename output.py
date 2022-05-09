@@ -4,6 +4,11 @@ import pygame
 pygame.init()
 
 # Internal view
+
+class Map:
+    def __init__(self):
+        self.size
+
 class Player:
     def __init__(self, pX, pY, p_angle, sight):
         self.pX = pX
