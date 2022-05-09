@@ -7,9 +7,14 @@ pygame.init()
 
 class Map:
     def __init__(self):
-        self.size
-    def Draw_Map(self):
+        self.size = 9
+        self.color = (200, 200, 200)
+    def Draw_Map(self, screen):
         print(0)
+        for row in range(self.size):
+            for col in range(self.size):
+                tile = row * self.size + col
+                pygame.draw.rect(screen, self.color if MAP[tile])
 
 class Player:
     def __init__(self, pX, pY, p_angle, sight):
