@@ -15,8 +15,6 @@ pygame.display.set_caption("Raycasting Test")
 # Hitbox
 Hitbox_Movement = input.Movement()
 Hitbox = output.Player(0, 0, Hitbox_Movement.angle, 100)
-# Map
-Active_MAP = input.MAP_Templates
 
 # Run until user asks to quit loop
 running = True
@@ -40,6 +38,7 @@ while running:
     screen.fill((50, 50, 50))
 
     # Map
+    Active_MAP = input.MAP_Templates
     Board = output.Map()
     Board.Draw_Map(screen, Active_MAP)
 
