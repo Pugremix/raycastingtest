@@ -14,5 +14,3 @@ class Map:
     def __init__(self):
         self.grid = 9
         self.size = 45
-        self.color = (160, 160, 160)
-        self.empty = (100, 100, 100)
