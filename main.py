@@ -13,7 +13,7 @@ pygame.display.set_caption("Raycasting Test")
 
 # Objects
 # Hitbox
-Hitbox_Movement = input.Movement
+Hitbox_Movement = input.Movement()
 Hitbox = output.Player(100, 100, 90, 100)
 
 # Run until user asks to quit loop
@@ -31,6 +31,7 @@ while running:
     screen.fill((150, 150, 150))
 
     # Draw Player
+    Hitbox.p_angle == Hitbox_Movement.angle
     Hitbox.Draw_internal_player(screen)
 
     pygame.display.flip()

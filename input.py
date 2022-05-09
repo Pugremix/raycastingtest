@@ -4,7 +4,7 @@ import pygame
 pygame.init()
 
 class Movement:
-    def __init__(self, angle):
+    def __init__(self, angle=90):
         self.angle = angle
         self.keys = pygame.key.get_pressed()
     def Rotation(self, keys):
