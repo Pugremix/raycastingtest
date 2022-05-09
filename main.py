@@ -28,6 +28,11 @@ while running:
 
     keys = pygame.key.get_pressed()
 
+    if keys[pygame.K_LEFT]:
+        Hitbox_Movement.Rotate_Left()
+    if keys[pygame.K_RIGHT]:
+        Hitbox_Movement.Rotate_Right()
+
     # Draw
     # Background
     screen.fill((150, 150, 150))
