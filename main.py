@@ -12,6 +12,8 @@ screen = pygame.display.set_mode([900, 750])
 pygame.display.set_caption("Raycasting Test")
 
 # Objects
+# Hitbox
+Hitbox_Movement = input.Movement
 Hitbox = output.Player(100, 100, 90, 100)
 
 # Run until user asks to quit loop
