@@ -55,4 +55,4 @@ pygame.quit()
 
 # Assistant line rotation code credit: https://stackoverflow.com/questions/18179877/pygame-rotating-a-line
 # Map drawing code credit: https://youtu.be/Rt5rEW0jQjw (Don't worry, the requirements for this project inhibit
-# me from using most of his actual raycasting code as he has programmed)
+# me from using most of the actual raycasting code as he has programmed)
