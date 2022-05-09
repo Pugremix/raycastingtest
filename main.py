@@ -38,6 +38,7 @@ while running:
     screen.fill((150, 150, 150))
 
     # Draw Player
+    Hitbox = output.Player(100, 100, Hitbox_Movement.angle, 100)
     Hitbox.Draw_internal_player(screen)
 
     pygame.display.flip()
