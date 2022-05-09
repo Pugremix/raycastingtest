@@ -20,7 +20,7 @@ class Map:
     def __init__(self):
         self.grid = 9
         self.size = 45
-        self.color = (175, 175, 175)
+        self.color = (160, 160, 160)
         self.empty = (100, 100, 100)
     def Draw_Map(self, screen):
         for row in range(self.grid):
