@@ -3,10 +3,6 @@ import math
 import pygame
 pygame.init()
 
-class Map:
-    def __init__(self):
-        self.size
-
 class Movement:
     def __init__(self, angle=-90):
         self.angle = angle
