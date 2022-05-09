@@ -3,6 +3,14 @@ import math
 import pygame
 pygame.init()
 
+# Player
+class Player:
+    def __init__(self, pX, pY, p_angle, sight):
+        self.pX = pX
+        self.pY = pY
+        self.p_angle = p_angle
+        self.sight = sight
+# Player Movement
 class Movement:
     def __init__(self, angle=-90):
         self.angle = angle
@@ -11,7 +19,7 @@ class Movement:
         self.angle -= self.rotation_speed
     def Rotate_Right(self):
         self.angle += self.rotation_speed
-
+# Maps
 MAP_Templates = (
     '#########'
     '#_______#'
