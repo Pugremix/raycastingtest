@@ -11,5 +11,3 @@ class Ray_Calculation:
         self.Ray_Target = 0
         self.target_x = pX - math.sin(p_angle)
         self.target_y = pY + math.cos(p_angle)
-    def Ray_Cast(self, map):
-        map
