@@ -24,18 +24,19 @@ class Player:
         self.pX = pX
         self.pY = pY
         self.p_angle = p_angle
-    def internal_player(self, screen):
+    def internal_player(self, screen, map):
         pygame.draw.rect(screen, (255, 0, 0), pygame.Rect(self.pX, self.pY, 15, 15))
         print("starting loop")
         for sight in range(1, 5):
             line_x = self.pX + 7 + math.cos(math.radians(self.p_angle)) * (sight * 45)
             line_y = self.pY + 7 + math.sin(math.radians(self.p_angle)) * (sight * 45)
-            identify_tile(line_x, line_y)
+            identify_tile(line_x, line_y, map)
             pygame.draw.line(screen, (0, 0, 0), (self.pX + 7, self.pY + 7), (line_x, line_y), 3)
 
 # Identify tiles
-def identify_tile(line_x, line_y):
+def identify_tile(line_x, line_y, map):
     tile_x = math.trunc(line_x / 45)
     tile_y = math.trunc(line_y / 45)
     tile_num = tile_x + (tile_y * 9)
-    print(tile_x, tile_y, tile_num)
+    tile_contents = map[tile_num]
+    print(tile_x, tile_y, tile_num, tile_contents)
