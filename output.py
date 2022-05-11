@@ -35,6 +35,7 @@ class Player:
 
 # Identify tiles
 def identify_tile(line_x, line_y):
-    tile_x = round(line_x / 45)
-    tile_y = round(line_y / 45)
-    print(tile_x, tile_y)
+    tile_x = math.trunc(line_x / 45)
+    tile_y = math.trunc(line_y / 45)
+    tile_num = tile_x + (tile_y * 9)
+    print(tile_x, tile_y, tile_num)
