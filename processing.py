@@ -12,7 +12,7 @@ class Player:
         self.pY = pY
         self.p_angle = p_angle
     def internal_player(self, screen, map):
-        pygame.draw.rect(screen, (255, 0, 0), pygame.Rect(self.pX, self.pY, 15, 15))
+        output.draw_hitbox(screen, self.pX, self.pY)
         print("starting loop")
         distance = 0
         for sight in range(1, 5):
@@ -23,7 +23,7 @@ class Player:
                 distance += 1
             elif tile == '#':
                 break
-            pygame.draw.line(screen, (0, 0, 0), (self.pX + 7, self.pY + 7), (line_x, line_y), 3)
+            output.draw_sight(screen, self.pX, self.pY, line_x, line_y)
             print(distance)
 # Identify tiles
 def identify_tile(line_x, line_y, map):
