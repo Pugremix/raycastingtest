@@ -1,6 +1,8 @@
 # Import and initialize pygame library
 import math
 import pygame
+import output
+
 pygame.init()
 
 # Player

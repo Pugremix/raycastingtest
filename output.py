@@ -1,10 +1,8 @@
 # Import and initialize pygame library
 import math
 import pygame
-import processing
 
 pygame.init()
-
 
 # Internal view
 # Map
