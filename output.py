@@ -1,7 +1,9 @@
 # Import and initialize pygame library
 import math
 import pygame
+
 pygame.init()
+
 
 # Internal view
 # Map
@@ -11,6 +13,7 @@ class Map:
         self.size = 45
         self.color = (160, 160, 160)
         self.empty = (100, 100, 100)
+
     def Draw_Map(self, screen, map):
         for row in range(self.grid):
             for col in range(self.grid):
@@ -18,12 +21,15 @@ class Map:
                 pygame.draw.rect(
                     screen, self.color if map[tile] == '#' else
                     self.empty, (col * self.size, row * self.size, self.size - 1, self.size - 1))
+
+
 # Player
 class Player:
     def __init__(self, pX, pY, p_angle):
         self.pX = pX
         self.pY = pY
         self.p_angle = p_angle
+
     def internal_player(self, screen, map):
         pygame.draw.rect(screen, (255, 0, 0), pygame.Rect(self.pX, self.pY, 15, 15))
         print("starting loop")
@@ -34,8 +40,11 @@ class Player:
             tile = identify_tile(line_x, line_y, map)
             if tile == '_':
                 distance += 1
+            elif tile == '#':
+                break
             pygame.draw.line(screen, (0, 0, 0), (self.pX + 7, self.pY + 7), (line_x, line_y), 3)
             print(distance)
+
 
 # Identify tiles
 def identify_tile(line_x, line_y, map):
