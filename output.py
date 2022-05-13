@@ -24,3 +24,6 @@ def draw_hitbox(screen, pX, pY):
     pygame.draw.rect(screen, (255, 0, 0), pygame.Rect(pX, pY, 15, 15))
 def draw_sight(screen, pX, pY, line_x, line_y):
     pygame.draw.line(screen, (0, 0, 0), (pX + 7, pY + 7), (line_x, line_y), 3)
+# Viewing Spectacle
+def draw_vision(screen):
+    pygame.draw.rect(screen, (0, 0, 0), pygame.Rect(400, 500, 100, 100))
