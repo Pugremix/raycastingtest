@@ -16,16 +16,16 @@ class Player:
         for rays in range(-6, 7):
             print('Start loop')
             distance = 0
-            for sight in range(1, 5):
-                line_x = self.pX + 7 + math.cos(math.radians(angle + (rays * 3))) * (sight * 45)
-                line_y = self.pY + 7 + math.sin(math.radians(angle + (rays * 3))) * (sight * 45)
+            for sight in range(1, 15):
+                line_x = self.pX + 7 + math.cos(math.radians(angle + (rays * 3))) * (sight * 15)
+                line_y = self.pY + 7 + math.sin(math.radians(angle + (rays * 3))) * (sight * 15)
                 tile = identify_tile(line_x, line_y, map)
                 if tile == '_':
                     distance += 1
                 elif tile == '#':
                     break
                 output.draw_sight(screen, self.pX, self.pY, line_x, line_y)
-                output.draw_vision(screen, (distance * 30), rays)
+                output.draw_vision(screen, (distance * 10), rays)
                 print(distance)
 # Identify tiles
 def identify_tile(line_x, line_y, map):
