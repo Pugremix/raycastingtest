@@ -35,7 +35,7 @@ while running:
 
     # Draw
     # Background
-    screen.fill((50, 50, 50))
+    screen.fill((20, 20, 20))
 
     # Map
     Active_MAP = input.MAP_Templates
@@ -43,7 +43,6 @@ while running:
     Board.Draw_Map(screen, Active_MAP)
 
     # View
-    output.draw_vision(screen)
 
     # Player
     Hitbox = processing.Player(195, 195, Hitbox_Movement.angle)
