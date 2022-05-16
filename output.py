@@ -26,8 +26,8 @@ def draw_sight(screen, pX, pY, line_x, line_y):
     pygame.draw.line(screen, (0, 0, 0), (pX + 7, pY + 7), (line_x, line_y), 3)
 # Viewing Spectacle
 def draw_vision(screen, darkness, pixel):
-    if darkness > 175:
-        darkness = 175
+    if darkness > 180:
+        darkness = 180
     pygame.draw.rect(
-        screen, (175 - darkness, 175 - darkness, 175 - darkness), pygame.Rect(400 + (pixel * 50), 500, 50, 100)
+        screen, (180 - darkness, 180 - darkness, 180 - darkness), pygame.Rect(400 + (pixel * 50), 500, 50, 100)
     )
