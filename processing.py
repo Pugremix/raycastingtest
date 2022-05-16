@@ -11,8 +11,9 @@ class Player:
         self.pX = pX
         self.pY = pY
         self.p_angle = p_angle
-    def internal_player(self, screen, map):
+    def internal_player(self, screen):
         output.draw_hitbox(screen, self.pX, self.pY)
+    def internal_vision(self, screen, map):
         print("starting loop")
         distance = 0
         for sight in range(1, 5):

@@ -46,7 +46,8 @@ while running:
 
     # Player
     Hitbox = processing.Player(195, 195, Hitbox_Movement.angle)
-    Hitbox.internal_player(screen, Active_MAP)
+    Hitbox.internal_player(screen)
+    Hitbox.internal_vision(screen, Active_MAP)
 
     pygame.display.flip()
 
