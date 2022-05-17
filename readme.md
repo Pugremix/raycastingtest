@@ -12,3 +12,10 @@ Instructions:
 
 - Use the left and right arrow keys to rotate your camera view left and right accordingly
 - Look at either the over-head 2D map being detected, or the first-person view below on screen
+
+
+Credit:
+
+Assistant line rotation code credit: https://stackoverflow.com/questions/18179877/pygame-rotating-a-line
+Tile mapping code credit: https://www.youtube.com/watch?v=gxyKOGrqPq4&list=PLLfIBXQeu3abhbqWp4yUTYi7hWNOsEpXa&index=1
+(Don't worry, the lack of libraries in this example inhibit me from using most of the actual raycasting code as he has programmed)
