@@ -12,9 +12,6 @@ class Player:
         self.pY = pY
         self.p_angle = p_angle
         self.sight = sight
-    def sight(self):
-        line_x = self.pX + 7 + math.cos(math.radians(self.p_angle)) * self.sight
-        line_y = self.pY + 7 + math.sin(math.radians(self.p_angle)) * self.sight
 # Player Movement
 class Movement:
     def __init__(self, angle=-90):
