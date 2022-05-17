@@ -11,4 +11,4 @@ This information is then displayed visually to give the illusion that you are vi
 Instructions:
 
 - Use the left and right arrow keys to rotate your camera view left and right accordingly
-- 
+- Look at either the over-head 2D map being detected, or the first-person view below on screen
