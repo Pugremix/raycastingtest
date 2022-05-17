@@ -13,12 +13,12 @@ class Player:
     def internal_player(self, screen):
         output.draw_hitbox(screen, self.pX, self.pY)
     def internal_vision(self, screen, map, angle):
-        for rays in range(-28, 29):
+        for rays in range(-29, 30):
             # print('Start loop')
             distance = 0
             for sight in range(1, 45):
-                line_x = self.pX + 7 + math.cos(math.radians(angle + (rays * 1.15))) * (sight * 5)
-                line_y = self.pY + 7 + math.sin(math.radians(angle + (rays * 1.15))) * (sight * 5)
+                line_x = self.pX + 7 + math.cos(math.radians(angle + (rays * 1.1))) * (sight * 5)
+                line_y = self.pY + 7 + math.sin(math.radians(angle + (rays * 1.1))) * (sight * 5)
                 tile = identify_tile(line_x, line_y, map)
                 if tile == '_':
                     distance += 1
