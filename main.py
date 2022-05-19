@@ -13,7 +13,7 @@ pygame.display.set_caption("Raycasting Test")
 
 # Objects
 # Hitbox
-Hitbox_Movement = input.Movement(195, 195)
+Hitbox_Movement = input.Movement()
 Hitbox = processing.Player(Hitbox_Movement.pX, Hitbox_Movement.pY)
 
 # Run until user asks to quit loop
