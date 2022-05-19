@@ -17,7 +17,8 @@ class Movement:
     def Rotate_Right(self):
         self.angle += self.rotation_speed
     # def Move_Forwards(self):
-        # self.
+        # self.pX += cos(self.angle) * self.rotation_speed
+        # self.pY += sin(self.angle) * self.rotation_speed
 # Maps
 MAP_Templates = (
     '#########'
