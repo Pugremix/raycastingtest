@@ -5,14 +5,11 @@ import processing
 
 pygame.init()
 
-# Player
-class Player:
-    def __init__(self, pX, pY):
-        self.pX = pX
-        self.pY = pY
 # Player Movement
 class Movement:
-    def __init__(self, angle=-90):
+    def __init__(self, pX, pY, angle=-90):
+        self.pX = pX
+        self.pY = pY
         self.angle = angle
         self.rotation_speed = 5
     def Rotate_Left(self):
