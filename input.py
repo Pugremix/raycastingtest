@@ -7,11 +7,9 @@ pygame.init()
 
 # Player
 class Player:
-    def __init__(self, pX, pY, p_angle, sight):
+    def __init__(self, pX, pY):
         self.pX = pX
         self.pY = pY
-        self.p_angle = p_angle
-        self.sight = sight
 # Player Movement
 class Movement:
     def __init__(self, angle=-90):
