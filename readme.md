@@ -19,3 +19,4 @@ Credit:
 Assistant line rotation code credit: https://stackoverflow.com/questions/18179877/pygame-rotating-a-line
 Tile mapping code credit: https://www.youtube.com/watch?v=gxyKOGrqPq4&list=PLLfIBXQeu3abhbqWp4yUTYi7hWNOsEpXa&index=1
 (Don't worry, the lack of libraries in this example inhibit me from using most of the actual raycasting code as he has programmed)
+Forward movement code: https://stackoverflow.com/questions/5346874/pygame-making-a-sprite-move-in-the-direction-it-is-facing
