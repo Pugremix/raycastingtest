@@ -32,10 +32,8 @@ while running:
         Hitbox_Movement.Rotate_Left()
     if keys[pygame.K_RIGHT]:
         Hitbox_Movement.Rotate_Right()
-    if keys[pygame.KEYUP]:
+    if keys[pygame.K_UP]:
         Hitbox_Movement.Move_Forwards()
-    if keys[pygame.K_SPACE]:
-        print(Hitbox_Movement.pX, Hitbox_Movement.pY, Hitbox_Movement.angle)
 
     # Draw
     # Background
