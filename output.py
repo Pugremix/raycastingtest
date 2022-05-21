@@ -29,5 +29,5 @@ def draw_vision(screen, darkness, pixel):
     if darkness > 165:
         darkness = 165
     pygame.draw.rect(
-        screen, (165 - darkness, 165 - darkness, 165 - darkness), pygame.Rect(420 + (pixel * 10), 500, 10, 185)
+        screen, (165 - darkness, 165 - darkness, 165 - darkness), pygame.Rect(420 + (pixel * 10), 480, 10, 195)
     )

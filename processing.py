@@ -24,7 +24,7 @@ class Player:
                 elif tile == '#':
                     break
                 output.draw_sight(screen, self.pX, self.pY, line_x, line_y)
-                output.draw_vision(screen, (distance * 4), rays)
+                output.draw_vision(screen, (distance * 3.75), rays)
 
 # Identify tiles
 def identify_tile(line_x, line_y, map):
