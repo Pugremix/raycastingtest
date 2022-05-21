@@ -19,7 +19,10 @@ class Movement:
     def Move_Forwards(self):
         self.pX += math.cos(math.radians(self.angle)) * self.rotation_speed
         self.pY += math.sin(math.radians(self.angle)) * self.rotation_speed
-        print(self.pX, self.pY, self.angle)
+    def Move_Backwards(self):
+        self.pX -= math.cos(math.radians(self.angle)) * self.rotation_speed
+        self.pY -= math.sin(math.radians(self.angle)) * self.rotation_speed
+
 # Maps
 MAP_Templates = (
     '#########'

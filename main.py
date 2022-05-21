@@ -34,6 +34,8 @@ while running:
         Hitbox_Movement.Rotate_Right()
     if keys[pygame.K_UP]:
         Hitbox_Movement.Move_Forwards()
+    if keys[pygame.K_DOWN]:
+        Hitbox_Movement.Move_Backwards()
 
     # Draw
     # Background
