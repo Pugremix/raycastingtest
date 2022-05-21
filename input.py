@@ -17,7 +17,6 @@ class Movement:
     def Rotate_Right(self):
         self.angle += self.rotation_speed
     def Move_Forwards(self):
-        print('Start')
         self.pX += math.cos(math.radians(self.angle)) * self.rotation_speed
         self.pY += math.sin(math.radians(self.angle)) * self.rotation_speed
         print(self.pX, self.pY, self.angle)
