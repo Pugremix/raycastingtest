@@ -15,6 +15,7 @@ class Player:
     def internal_vision(self, screen, map, angle):
         for rays in range(-32, 33):
             distance = 0
+            distance_mult = 0
             for sight in range(1, 45):
                 line_x = self.pX + 7 + math.cos(math.radians(angle + (rays * 1))) * (sight * 5)
                 line_y = self.pY + 7 + math.sin(math.radians(angle + (rays * 1))) * (sight * 5)
