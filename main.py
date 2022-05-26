@@ -19,7 +19,7 @@ Hitbox = processing.Player(Hitbox_Movement.pX, Hitbox_Movement.pY)
 # Run until user asks to quit loop
 running = True
 while running:
-    pygame.time.delay(20)
+    pygame.time.delay(15)
 
     # Did user click the close button?
     for event in pygame.event.get():
