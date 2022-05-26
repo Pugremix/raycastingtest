@@ -18,10 +18,10 @@ class Player:
             for sight in range(1, 45):
                 line_x = self.pX + 7 + math.cos(math.radians(angle + (rays * 1))) * (sight * 5)
                 line_y = self.pY + 7 + math.sin(math.radians(angle + (rays * 1))) * (sight * 5)
-                tile_dist, tile = identify_tile(line_x, line_y, map)
-                if tile_dist == '_':
+                dist, tile = identify_tile(line_x, line_y, map)
+                if dist == '_':
                     distance += 1
-                elif tile_dist == '#':
+                elif dist == '#':
                     break
                 output.draw_sight(screen, self.pX, self.pY, line_x, line_y)
                 output.draw_vision(screen, (distance * 3.75), rays)
