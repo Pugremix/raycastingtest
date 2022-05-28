@@ -36,10 +36,12 @@ while running:
         if event.type == pygame.QUIT:
             running = False
 
+    # If no error is present, run program
     if (HasError != True):
 
         keys = pygame.key.get_pressed()
 
+        # Directional inputs
         if keys[pygame.K_LEFT]:
             Hitbox_Movement.Rotate_Left()
         if keys[pygame.K_RIGHT]:

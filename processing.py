@@ -11,13 +11,16 @@ class Player:
         self.pX = pX
         self.pY = pY
     def internal_player(self, screen):
+        # Draw player
         output.draw_hitbox(screen, self.pX, self.pY)
     def internal_vision(self, screen, map, angle):
+        # Begin processing sight rays
         for rays in range(-32, 33):
             sight_range = 45
             current_tile = None
             distance = 0
             distance_mod = 0
+            # Process sight rays in segments
             for sight in range(1, sight_range):
                 line_x = self.pX + 7 + math.cos(math.radians(angle + (rays * 1))) * (sight * 5)
                 line_y = self.pY + 7 + math.sin(math.radians(angle + (rays * 1))) * (sight * 5)
@@ -30,7 +33,9 @@ class Player:
                     break
                 if distance == (sight_range - 1):
                     distance_mod = 0
+                # Draw sight rays
                 output.draw_sight(screen, self.pX, self.pY, line_x, line_y)
+                # Draw first-person view
                 output.draw_vision(screen, ((distance * 4.5) - distance_mod), rays)
 
 # Identify tiles

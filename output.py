@@ -20,11 +20,13 @@ class Map:
                     screen, self.color if map[tile] == '#' else
                     self.empty, (col * self.size, row * self.size, self.size - 1, self.size - 1))
 # Player
+# Draw player
 def draw_hitbox(screen, pX, pY):
     pygame.draw.rect(screen, (255, 0, 0), pygame.Rect(pX, pY, 15, 15))
+# Draw sight rays
 def draw_sight(screen, pX, pY, line_x, line_y):
     pygame.draw.line(screen, (0, 0, 0), (pX + 7, pY + 7), (line_x, line_y), 3)
-# Viewing Spectacle
+# Viewing Spectacle (Draw first-person view)
 def draw_vision(screen, darkness, pixel):
     if darkness > 165:
         darkness = 165
